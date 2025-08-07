@@ -1,0 +1,67 @@
+h1{
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+}
+
+
+#grid{
+  height:600px;
+  width: 800px;
+  display: grid;
+  background-color: rgb(126, 126, 126);
+  grid-template-rows: repeat(12,1fr);
+  grid-template-columns: repeat(12,1fr);
+  grid-gap:10px;
+  margin: auto;
+}
+div div{
+background-color: lightseagreen;
+}
+#one{
+  grid-column: 1/13;
+}
+#two{
+  grid-column: 1/4;
+  grid-row: 2/12;
+}
+#three{
+  grid-column: 4/10;
+}
+#four{
+  grid-column: 10/13;
+  grid-row: 2/12;
+}
+#five{
+  grid-column: 4/10;
+  grid-row: 3/12;
+}
+#six{
+  grid-column: 1/13;
+}
+
+
+@media(max-width:720px)
+{
+#one{
+  grid-column: 1/13;
+}
+#two{
+  grid-column: 1/4;
+  grid-row: 3/12;
+
+}
+#three{
+  grid-column: 1/13;
+}
+#four{
+  grid-column: 1/4;
+  grid-row: 12/13;
+}
+#five{
+  grid-column: 4/13;
+  grid-row: 3/12;
+}
+#six{
+  grid-column: 4/13;
+}
+}
